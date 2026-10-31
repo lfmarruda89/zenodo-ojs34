@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30T06:56:44-07:00\n"
+"PO-Revision-Date: 2019-09-30T06:56:44-07:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.importexport.zenodo.displayName"
+msgstr "Zenodo Export Plugin"
+
+msgid "plugins.importexport.zenodo.description"
+msgstr "Export journal articles to Zenodo."
+
+msgid "plugins.importexport.zenodo.missingFields"
+msgstr ""
+"Zenodo records carry the journal's publisher and ISSN. Please go to your <a href="
+"\"{$url}\">Journal Settings</a> and ensure you have entered them before depositing."
+
+msgid "plugins.importexport.zenodo.export.failure.missingMetadata"
+msgstr "The record can not be deposited because Zenodo requires the following metadata, which is missing: '{$param}'"
+
+msgid "plugins.importexport.zenodo.export.failure.noPdfGalley"
+msgstr "The record can not be deposited because no article PDF was found. Zenodo records must include the full text: a PDF galley in the article's language whose file type is the article text, not a supplementary or dependent file."
+
+msgid "plugins.importexport.zenodo.grid.recordId"
+msgstr "Zenodo ID"
+
+msgid "plugins.importexport.zenodo.grid.sandboxRecordId"
+msgstr "{$id} (Sandbox)"
+
+msgid "plugins.importexport.zenodo.export.createAccount"
+msgstr "Create a Zenodo account to get started."
+
+msgid "plugins.importexport.zenodo.registrationIntro"
+msgstr ""
+"If you would like to register articles from within OJS, please enter your "
+"Zenodo API Key. You will find your API key on your Zenodo account's \"Applications\" page."
+
+msgid "plugins.importexport.zenodo.settings.form.apiKey"
+msgstr "Zenodo API Key"
+
+msgid "plugins.importexport.zenodo.settings.form.community"
+msgstr "Zenodo Community"
+
+msgid "plugins.importexport.zenodo.settings.form.community.heading"
+msgstr "Community Settings"
+
+msgid "plugins.importexport.zenodo.settings.form.community.description"
+msgstr ""
+"The Zenodo community to submit records to. Please enter the community's unique identifier; "
+" for example, to submit to the community <a href=\"https://zenodo.org/community/eu\">https://zenodo.org/community/eu</a>, enter 'eu'."
+" Only enter a community if you have permissions in Zenodo to submit records to it."
+" If the community does not require submissions to be reviewed, the record will automatically be approved and published."
+
+msgid "plugins.importexport.zenodo.settings.form.automaticPublishingCommunity.description"
+msgstr ""
+"<strong>Accept Community Reviews</strong>: Automatically accept review requests to this Zenodo community. "
+"This will only apply to communities which require submissions to be reviewed. "
+"Only enable this setting if you have permissions in Zenodo to publish records in this community. This will publish the record, "
+"and can not be deleted once published."
+
+msgid "plugins.importexport.zenodo.settings.form.automaticRegistration.description"
+msgstr ""
+"<strong>Automatic Deposit</strong>: Deposit newly published articles to Zenodo automatically. Deposits are "
+"sent once a day, so an article may take up to a day after publication to "
+"reach Zenodo."
+
+msgid "plugins.importexport.zenodo.settings.form.automaticPublishing.description"
+msgstr ""
+"<strong>Automatic Publishing</strong>: Publish records automatically in Zenodo. If not enabled, records "
+"will be created as drafts and can be published in the Zenodo platform. Published records cannot be deleted except"
+" under special circumstances."
+
+msgid "plugins.importexport.zenodo.settings.form.doi.description"
+msgstr ""
+"<strong>Zenodo DOIs:</strong> Allow Zenodo to mint DOIs when a DOI has not been created in OJS. If not enabled, only objects "
+"with a DOI can be deposited."
+
+msgid "plugins.importexport.zenodo.settings.form.testMode.description"
+msgstr ""
+"<strong>Test Mode:</strong> Use the <a href=\"https://sandbox.zenodo.org\">Zenodo Sandbox</a> API "
+"for registration. "
+"Please do not forget to disable this option for production."
+
+msgid "plugins.importexport.zenodo.submit.success"
+msgstr "The selected records have been queued for deposit to Zenodo. Each record's status is updated when its deposit runs."
+
+msgid "plugins.importexport.zenodo.export.failure.journalNotFound"
+msgstr "The journal this deposit was queued for could not be found."
+
+msgid "plugins.importexport.zenodo.senderTask.name"
+msgstr "Zenodo automatic registration task"
+
+msgid "plugins.importexport.zenodo.register.error.noApiKey"
+msgstr "No Zenodo API Key was found. Please set the API key and try again."
+
+msgid "plugins.importexport.zenodo.register.error.productionRecord"
+msgstr "The record is already deposited to Zenodo (ID {$param}), so it is not deposited to the sandbox. Turn off test mode to update it."
+
+msgid "plugins.importexport.zenodo.register.error.mdsError"
+msgstr "Deposit was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.register.error.communityError"
+msgstr "Unable to retrieve the community ID from Zenodo. Please check the community is set correctly and try again. "
+"If you are using the sandbox, please enable test mode first."
+
+msgid "plugins.importexport.zenodo.api.error.communityIdError"
+msgstr "Retrieving the community ID was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.fileError"
+msgstr "File deposit was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.fileDeleteError"
+msgstr "Replacing the draft's files in Zenodo was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.awardError"
+msgstr "The award validation check was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.publishError"
+msgstr "Publishing was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.publishCheckError"
+msgstr "The record publish check was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.createReviewError"
+msgstr "Creating the review request was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.submitReviewError"
+msgstr "Submitting the review request to the community was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.acceptReviewError"
+msgstr "Accepting the review request to the community was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.reviewCancelError"
+msgstr "Cancelling the review request was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.openReviewNotAccepted"
+msgstr "The record was updated in Zenodo, but its community review request is already open and could not be accepted automatically. It will be published when the community accepts it in Zenodo."
+
+msgid "plugins.importexport.zenodo.api.error.reviewCheckError"
+msgstr "Checking for a review request was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.communityCheckError"
+msgstr "Checking the record's communities was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.submitPublishedCommunityError"
+msgstr "Submitting the published record to the community was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.noDoi"
+msgstr "The record can not be deposited because it has no DOI. Assign a DOI in OJS, or enable Zenodo DOIs in the plugin settings."
+
+msgid "plugins.importexport.zenodo.register.error.draftPublishError"
+msgstr "Creating the draft from the published record was not successful! The Zenodo API returned an error: '{$param}'."
+
+msgid "plugins.importexport.zenodo.api.error.isPublished"
+msgstr "This record has been published in Zenodo and can not be updated."
+
+msgid "plugins.generic.zenodo.displayName"
+msgstr "Zenodo Plugin"
+
+msgid "plugins.generic.zenodo.description"
+msgstr "Exports articles or article versions to Zenodo."
+
+msgid "plugins.importexport.zenodo.status.error"
+msgstr "Deposit error"
+
+msgid "plugins.importexport.zenodo.status.submitted"
+msgstr "Submitted"
